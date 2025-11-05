@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Positioning</title>
+    <style>
+        body{
+            max-width: 1300px;
+            margin: 35px auto;
+            background-color: #ECEEDF;
+            font-family: cursive;
+        }
+
+        /**head**/
+        .header{
+            display: flex;
+            gap: 10px;
+        }
+        .left-header, .right-header{
+            border: 2px solid black;
+            height: 90px;
+            margin-bottom: 10px;
+            background-color: #537D5D;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .left-header{
+            width: 350px;
+        }
+        .right-header{
+            width: 950px;
+        }
+
+        /**body**/
+        .body, .footer{
+            display: flex;
+            gap: 13px;
+        }
+        .box{
+            border: 2px solid black;
+            height: 500px;
+            border-radius: 5px;
+            padding: 15px;
+            cursor: grab;
+        }
+        .kiri{
+            width: 315px;
+            background-color: #73946B;
+        }
+        .tengah{
+            width: 410px;
+            background-color: #73946B;
+        }
+        .kanan{
+            width: 450px;
+            background-color: #73946B;
+        }
+        .kiri:hover, .kanan:hover, .tengah:hover{
+            background-color: #D2D0A0;
+            transform: translateY(-3px);
+        }
+
+        /**footer**/
+        .footer{
+            border: 2px solid black;
+            margin-top: 10px;
+            height: 100px;
+            border-radius: 5px;
+            background-color: #9EBC8A;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="left-header"></div>
+            <div class="right-header"></div>
+        </div>
+        <div class="body">
+            <div class="box kiri"></div>
+            <div class="box tengah"></div>
+            <div class="box kanan"></div>
+        </div>
+        <div class="footer"></div>
+    </div>
+</body>
+</html>

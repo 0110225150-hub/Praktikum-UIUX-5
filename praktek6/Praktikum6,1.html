@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX 2</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            background-color: rgb(255, 238, 215);
+            padding: 10px;
+            border-radius: 3px;
+        }
+        .container img {
+            width: 200px;
+            height: 300px;
+            flex-shrink: 0;
+            object-fit: cover;
+        }
+        .poto {
+            border-radius: 5px;
+            gap: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="luna.jpg" alt="" class="poto">
+        <img src="luna2.avif" alt="" class="poto">
+        <img src="12.jpg" alt="" class="poto">
+        <img src="raven.png" alt="" class="poto">
+    </div>
+</body>
+</html>
